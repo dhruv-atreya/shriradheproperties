@@ -3,64 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Property Catalog</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #333;
-        }
-        .property {
-            margin: 20px 0;
-            border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 8px;
-        }
-        .property img {
-            max-width: 100%;
-            border-radius: 8px;
-        }
-        .property h3 {
-            margin: 10px 0;
-        }
-    </style>
+    <title>Shri Radhey Properties</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Property Catalog</h1>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <span>Shri Radhey Properties</span>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Listings</a>
+            <a href="#">About</a>
+        </nav>
     </header>
-    <section>
-        <h2>Available Properties</h2>
-        <div class="property">
-            <img src="property1.jpg" alt="Beautiful Villa">
-            <h3>Beautiful Villa</h3>
-            <p>Location: City Center</p>
-            <p>Price: $500,000</p>
+
+    <div class="hero">
+        <img src="temple.jpg" alt="Temple">
+        <div class="overlay">
+            <h1 class="hero-text">।। ब्रज तज बैकुंठ न जाऊं ।।</h1>
+            <p>"Won’t leave Braj, even for heavens"</p>
         </div>
-        <div class="property">
-            <img src="property2.jpg" alt="Modern Apartment">
-            <h3>Modern Apartment</h3>
-            <p>Location: Uptown</p>
-            <p>Price: $300,000</p>
+    </div>
+    
+    <div class="content-wrapper">
+
+        
+        <div class="content">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            
         </div>
-    </section>
-</body>
+        <div class="content-overlay">
+            <div class="content-overlay-text">
+                <p>"Properties Listing Soon"</p>
+            </div>
+        </div>
+        
+    </div>
 </html>
