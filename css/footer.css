@@ -1,0 +1,25 @@
+footer {
+    background-color: #111; /* Dark background for the footer */
+    color: #fff; /* White text for contrast */
+    text-align: center; /* Center-align text */
+    padding: 20px 0; /* Space above and below the footer text */
+    position: relative; /* Default position */
+    bottom: 0; /* Stick to the bottom if needed */
+    width: 100%; /* Make the footer span the full width of the page */
+}
+
+.footer-content {
+    max-width: 1200px; /* Limits the content width */
+    margin: 0 auto; /* Centers the footer content */
+}
+
+.footer-nav a {
+    color: #fff; /* Links are white */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Adds space between links */
+}
+
+.footer-nav a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+    color: #ffd700; /* Optional: Highlight on hover */
+}
