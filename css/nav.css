@@ -1,7 +1,7 @@
 .header-bg {
     position: absolute;
     z-index: -100;
-    top: 0;
+    top: 40px;
     left: 0;
     width: 100%;
     height: 100px;
@@ -37,6 +37,7 @@ header .logo span {
     font-size: 1.5rem;
     font-family: "Playwrite IN", serif;
     font-weight: 800;
+    pointer-events: none
 }
 
 header nav {
@@ -54,14 +55,14 @@ header nav a {
 
 header nav a:hover {
     text-decoration: underline;
-    -webkit-text-stroke: 0.2px #ed006f;
+    -webkit-text-stroke: 0.2px #FCC737;
 }
 
 .contact-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ed006f;
-    color: white;
+    background-color: #FCC737;
+    color: rgb(255, 255, 255);
     margin-left: 35px;
     font-size: 22px;
     font-weight: bold;

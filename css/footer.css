@@ -1,25 +1,48 @@
+.border-yellow {
+    border-color: #ffd700 !important;
+  }
+
 footer {
-    background-color: #111; /* Dark background for the footer */
-    color: #fff; /* White text for contrast */
-    text-align: center; /* Center-align text */
-    padding: 20px 0; /* Space above and below the footer text */
-    position: relative; /* Default position */
-    bottom: 0; /* Stick to the bottom if needed */
-    width: 100%; /* Make the footer span the full width of the page */
+    background-color: black;
 }
 
-.footer-content {
-    max-width: 1200px; /* Limits the content width */
-    margin: 0 auto; /* Centers the footer content */
+.container {
+    width: 100%;
+    font-size: medium;
 }
 
-.footer-nav a {
-    color: #fff; /* Links are white */
-    text-decoration: none; /* Remove underline */
-    margin: 0 10px; /* Adds space between links */
+.footer-name {
+    color: white;
+    font-size: 1rem;
+    font-family: "Playwrite IN", serif;
+    margin-top: 50px;
+    font-weight: 800;
+    pointer-events: none
 }
 
-.footer-nav a:hover {
-    text-decoration: underline; /* Adds underline on hover */
-    color: #ffd700; /* Optional: Highlight on hover */
+.footer-img {
+    height: 50px;
+    margin-right: 10px;
+
+}
+
+.mb-3 {
+    font-family: "Source Serif 4";
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+  }
+  
+.row > div {
+    flex: 1;
+    border: 1.5px solid #FCC737;
+  }
+
+.copy-name {
+    color: #FCC737;
+    font-weight: bold;
 }
