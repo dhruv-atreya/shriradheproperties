@@ -1,0 +1,159 @@
+@media only screen and (max-width: 480px) {
+
+    .top-banner .contacts ul {
+        font-size: 1rem;
+        gap: 1.5rem;
+        padding: 0;
+    }
+
+    .email {
+        display: none;
+    }
+    
+    header {
+        grid-template-columns: auto  12vw;
+        grid-auto-flow: dense;
+    }
+
+    .logo{
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .logo span {
+        font-size: 1.125rem;
+    }
+
+    nav {
+        display: none;
+        font-size: 1rem;
+        padding: 0;
+        grid-column: span 2;
+    }
+
+    nav ul{
+        gap: 2.5rem;
+    }
+
+    .mobile-nav {
+        display: block;
+        grid-row: 2;
+        margin-bottom: 0.5rem;
+
+    }
+
+    .contact-button {
+    padding: 0.1rem 0.2rem;
+    text-wrap: nowrap;
+    }
+
+    .menu{
+        display: block;
+        grid-column: 2;
+        fill: black;
+        background-color: black;
+        border: 0;
+        margin-right: 0.3rem;
+    }
+
+    .menu:active{
+        width: 110%;
+    }
+
+    .hero-line-1{
+        font-size: 2rem;
+    }
+
+    .hero-line-2{
+        font-size: 1.135rem;
+        margin-top: 1rem;
+    }
+
+.content-main-label {
+    font-size: 1.125rem;
+}
+
+.content-main-label::after {
+width: 7.5rem;
+}
+
+   .content .card-2, .content .card-3 {
+        display: none;
+    }
+
+    .content-overlay {
+        top: 30rem;
+    }
+
+    .content-overlay p {
+        font-size: 8vw;
+    }
+
+.about-header p {
+    font-size: 1.75rem;
+    padding-block: 0;
+    padding-bottom: 0.3rem;
+}
+
+.about-header p::after {
+    width: 8rem;
+    height: 3px;
+}
+
+    .about-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .side-bar {
+    display: none;       
+    }
+
+    .about-main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/temple5.jpg);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0.8rem 0.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+
+    .about {
+    border: 3.5px solid var(--clr-accent);
+
+    }
+
+    .picture {
+        height: 8rem;
+    }
+
+    .about div .name {
+        color: white;
+        font-size: 1.5rem;
+        width: 13rem;
+    }
+
+    .about div .post {
+        color: rgb(199, 199, 199);
+        font-size: 1.125rem;
+    }
+
+    .about div .intro {
+        display: none;
+    }
+
+    .about-button {
+        margin-right: 0;
+
+    }
+
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+  }

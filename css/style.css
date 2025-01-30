@@ -89,14 +89,21 @@
     justify-content: center;
 }
 
-.contacts > ul > div {
+.phone, .whatsapp, .email {
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 }
 
-.contacts > ul > div:hover {
+.phone a, .whatsapp a, .email a {
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+    font-weight: var(--fw-bold);
+}
+
+.contacts  ul  div  li a:hover {
     text-decoration: underline;
 }
 
@@ -107,12 +114,10 @@
 }
 
 header {
-    /* position: sticky; */
-    top: 0;
-    z-index: 1000;
-    background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0.40) 75%, rgba(0, 0, 0, 0) 100%);;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0.40) 75%, rgba(0, 0, 0, 0) 100%);;
+    background-color: black;
 }
 
 .header-background {
@@ -141,6 +146,12 @@ header {
 .logo img {
     height: 3.5rem;
     margin-right: 0.5rem;
+    border-radius: 50%;
+    border: 1.75px solid var(--clr-accent);
+}
+
+.menu {
+    display: none;
 }
 
 nav {
@@ -289,9 +300,9 @@ nav ul a:hover {
     position: absolute;
     width: 100%;
     height: auto;
-    top: 120%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 50rem;
+    left: 0;
+    /* transform: translate(-50%, -50%); */
     text-align: center;
 }
 
@@ -305,13 +316,28 @@ nav ul a:hover {
 
 /* About Section */
 
-.about-header {
+.about-header p {
     text-align: center;
     background-color: var(--clr-neutral-1000);
     font-size: 2.5rem;
     font-weight: var(--fw-bold);
     color: var(--clr-neutral-100);
-    padding: 0.5rem;
+    padding-block: 1rem;
+    margin: 0;
+    line-height: 2.7rem;
+    box-shadow: 3px 2px 10px 6px rgba(0, 0, 0, 0.4);
+
+}
+
+.about-header p::after {
+    content: "";
+    display: block;
+    width: 11rem;
+    height: 5px;
+    background-color: var(--clr-accent);
+    margin-inline: auto;
+    /* margin-top: 0.5rem; */
+    /* margin-bottom: 1rem; */
 }
 
 .about-section {
@@ -328,10 +354,6 @@ nav ul a:hover {
     
 }
 
-.side-bar h2 {
-    position: absolute;
-    top: 0;
-}
 
 .about-main{
     margin-block: 1rem;
@@ -348,7 +370,7 @@ nav ul a:hover {
 }
 
 .picture {
-    width: 11rem;
+    aspect-ratio: 1;
     height: 11rem;
     margin: 1rem;
     border-radius: 50%;
@@ -383,6 +405,7 @@ nav ul a:hover {
     width: 8rem;
     margin-left: auto;
     margin-right: 2rem;
+    margin-bottom: 1rem;
     box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.2);
     font-weight: var(--fw-bold);
 

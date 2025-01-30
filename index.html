@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shri Radhey Properties</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
 
     <!-- Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,14 +22,22 @@
   <div class="top-banner">
         <div class="contacts">
             <ul>
-              <div><img src="img/phone.png"><li class="phone">+91 8868801602</li></div>
-              <div><img src="img/whatsapp.png"><li class="whatsapp">+91 7500270228</li></div>
-              <div><img src="img/mail.png"><li class="email">sales@shriradhaproperties.in</li></div>
+              <div class="phone">
+                <img src="img/phone.png">
+                <li><a target="_blank" href="">+91 8868801602</a></li>
+              </div>
+              <div class="whatsapp">
+                <img src="img/whatsapp.png">
+                <li><a target="_blank" href="	https://wa.me/917500270228">+91 7500270228</a></li></div>
+              <div class="email">
+                <img src="img/mail.png">
+                <li><a target="_blank" href="mailto:sales@shriradhaproperties.in">sales@shriradhaproperties.in</a></li>
+              </div>
             </ul>
         </div>
   </div>
 
-  <div class="header-background"></div>
+  <!-- <div class="header-background"></div> -->
 
   <header>
         <div class="logo">
@@ -36,7 +45,7 @@
             <span>Shri Radhey Properties</span>
         </div>
 
-        <nav>
+        <nav id="nav">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#listings">Listings</a></li>
@@ -44,6 +53,7 @@
             <li><button class="contact-button" id="nav-contact-button">Contact Us</button></li>
           </ul>
         </nav>
+        <button class="menu" id="menu"><img src="img/menu-white.png" alt=""></button>
   </header>
 
   <div class="hero">
@@ -95,8 +105,8 @@
     </div>
         <div class="content">
             <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+            <div class="card card-2"></div>
+            <div class="card card-2"></div>
         </div>
         
         <div class="content-overlay">
@@ -104,11 +114,11 @@
         </div>
 
     </div>
-<div class="about-header" id="about-section">About Us</div>
+<div class="about-header" id="about-section">
+  <p>About Us</p>
+</div>
     <div class="about-section">
-      <div class="side-bar">
-        <!-- <h2>About Us</h2> -->
-      </div>
+      <div class="side-bar"></div>
 
       <div class="about-main">
         <div class="about">
@@ -129,7 +139,7 @@
           <button class="contact-button about-button" id="nav-contact-button">Contact Me</button>
         </div>
         </div>
-        <div class="about">
+        <!-- <div class="about">
           <img src="img/default pp.png" alt="Dileep Kumar" class="picture">
           <div>
           <span class="name">Dileep Kumar</span>
@@ -137,7 +147,7 @@
           <p class="intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat quo labore et officiis assumenda consequuntur excepturi veniam ipsam exercitationem, magnam eius debitis a necessitatibus. Voluptas illo quos ullam similique consequuntur?</p>
           <button class="contact-button about-button" id="nav-contact-button">Contact Me</button>
         </div>
-        </div>
+        </div> -->
       </div>
     </div>
     
@@ -158,8 +168,8 @@
           </div>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">All Proper Listings</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="#listings"">All Proper Listings</a></li>
+            <li><a href="#about-section">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
@@ -183,4 +193,7 @@
     </footer>
 
 </body>
+
+<script src="js/script.js"></script>
+
 </html>
