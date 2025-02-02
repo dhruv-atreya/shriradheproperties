@@ -62,6 +62,87 @@
     isolation: isolate;
   }
 
+  .opt-contact {
+    margin-inline: auto;
+    font-size: 1rem;
+}
+
+.opt-contact span {
+    color: var(--clr-accent);
+    text-decoration: underline;
+}
+
+.contact-form input {
+    padding: .125rem;
+}
+
+.contact-form h1 {
+    font-size: 3rem;
+}
+
+.form-label {
+    font-size: 1.125rem;
+    margin-block: auto;
+    padding: 0;
+}
+
+.submit-button {
+    padding: auto;
+    margin-top: 1rem;
+    background: var(--clr-accent);
+    border: none;
+    font-weight: 600;
+}
+
+.contact-form {
+    display: grid;
+    margin: 2rem;
+}
+
+.contact-form-wrapper {
+    display: grid;
+    min-height: 70vh;
+    width: 40vw;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 3%;
+    border: 2px solid var(--clr-accent);
+}
+
+.popup-close {
+    margin-left: auto;
+    padding: 0.5rem;
+    aspect-ratio: 1;
+    text-align: center;
+    line-height: 0;
+    font-weight: 700;
+    background: var(--clr-accent);
+    border: none;
+}
+
+div.hidden {
+    display: none;
+}
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+.popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    min-width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+}
+
+/* Main site */
+
 
 .top-banner {
     min-height: fit-content;
@@ -144,7 +225,7 @@ header {
 }
 
 .logo img {
-    height: 3.5rem;
+    height: 5rem;
     margin-right: 0.5rem;
     border-radius: 50%;
     border: 1.75px solid var(--clr-accent);
@@ -383,6 +464,7 @@ nav ul a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 
 .about div .name {
@@ -443,6 +525,7 @@ footer {
     padding-bottom: 1rem;
     font-size: 1.5rem;
     font-weight: var(--fw-bold);
+    margin: 0;
 }
 
 .footer-headings::after {

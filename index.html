@@ -18,6 +18,24 @@
 
 </head>
 <body>
+  <div id="popup" class="hidden popup">
+    <div class="contact-form-wrapper">
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/mbldyaev" method="POST">
+          <button type="button" class="popup-close" id="popup-close">X</button>
+          <h1>Contact Us</h1>
+          <label for="name" class="form-label">Name</label>
+        <input type="text" name="name">
+        <label for="number" class="form-label">Contact Number</label>
+        <input type="text" name="number">
+        <label for="query" class="form-label">Inquiry</label>
+        <input type="text" name="query">
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+    <p class="opt-contact">
+        Or Call Us Now on <a href="tel:+918868801602"><span>+91 8868801602</span></a>
+    </p>
+</div>
+</div>
     
   <div class="top-banner">
         <div class="contacts">
@@ -36,8 +54,6 @@
             </ul>
         </div>
   </div>
-
-  <!-- <div class="header-background"></div> -->
 
   <header>
         <div class="logo">
@@ -126,8 +142,8 @@
           <div>
           <span class="name">Shubham Sharma</span>
           <span class="post">CEO</span>
-          <p class="intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat quo labore et officiis assumenda consequuntur excepturi veniam ipsam exercitationem, magnam eius debitis a necessitatibus. Voluptas illo quos ullam similique consequuntur?</p>
-          <button class="contact-button about-button" id="nav-contact-button">Contact Me</button>
+          <p class="intro"></p>
+          <button onclick="window.open('https\://www.instagram.com/shri_radhey_property/', '_blank')" class="contact-button about-button" id="nav-contact-button">Contact Me</button>
         </div>
         </div>
         <div class="about">
@@ -135,19 +151,10 @@
           <div>
           <span class="name">Brajesh Sharma</span>
           <span class="post">M.D.</span>
-          <p class="intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat quo labore et officiis assumenda consequuntur excepturi veniam ipsam exercitationem, magnam eius debitis a necessitatibus. Voluptas illo quos ullam similique consequuntur?</p>
+          <p class="intro"></p>
           <button class="contact-button about-button" id="nav-contact-button">Contact Me</button>
         </div>
         </div>
-        <!-- <div class="about">
-          <img src="img/default pp.png" alt="Dileep Kumar" class="picture">
-          <div>
-          <span class="name">Dileep Kumar</span>
-          <span class="post"></span>
-          <p class="intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat quo labore et officiis assumenda consequuntur excepturi veniam ipsam exercitationem, magnam eius debitis a necessitatibus. Voluptas illo quos ullam similique consequuntur?</p>
-          <button class="contact-button about-button" id="nav-contact-button">Contact Me</button>
-        </div>
-        </div> -->
       </div>
     </div>
     
@@ -168,7 +175,7 @@
           </div>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#listings"">All Proper Listings</a></li>
+            <li><a href="#listings">All Proper Listings</a></li>
             <li><a href="#about-section">About Us</a></li>
             <li><a href="#">Contact Us</a></li>
           </ul>
